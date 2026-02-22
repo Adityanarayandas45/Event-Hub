@@ -2,10 +2,10 @@ import { readDB } from "@/lib/db";
 
 export async function GET(
   _req: Request,
-  context: { params: { id: string } }
+  context: {params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = await Promise.resolve(context.params);
+    const { id } = await context.params
     const db = readDB();
 
   

@@ -5,12 +5,12 @@ import cloudinary from "@/lib/cloudinary";
 
 export async function GET(
   _req: Request,
-  context: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   try {
     const db = readDB();
     const now = new Date();
-    const { id } = await Promise.resolve(context.params);
+    const { id } = await context.params;
     const event = db.events.find(
       (e) => e.id === id
     );
