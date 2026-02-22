@@ -2,13 +2,13 @@ import { readDB, writeDB } from "@/lib/db";
 
 export async function PUT(
   request: Request,
-  context: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   try {
     const { name } = await request.json();
     const db = readDB();
 
-    const { id } = await Promise.resolve(context.params);
+    const { id } = await context.params;
 
     const category = db.categories.find(
       (c) => c.id === id
@@ -43,12 +43,11 @@ export async function PUT(
 
 export async function DELETE(
   _request: Request,
-  context: { params: { id: string } }
-) {
+  context: { params: Promise<{ id: string }> }
+){
   try {
     const db = readDB();
-    const { id } = await Promise.resolve(context.params);
-
+    const { id } = await context.params;
     const index = db.categories.findIndex(
       (c) => c.id === id
     );
