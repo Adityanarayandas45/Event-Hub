@@ -213,10 +213,10 @@ export async function PUT(
 
 export async function DELETE(
   _req: Request,
-  context: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   const db = readDB();
- const {id}= await Promise.resolve(context.params)
+ const {id}= await context.params
   const index = db.events.findIndex((e) => e.id === id);
   if (index === -1) {
     return new Response(
