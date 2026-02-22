@@ -1,0 +1,243 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #d9dce3;
+}
+
+
+.attendee-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.attendee-sidebar {
+  width: 240px;
+  min-width: 240px;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.attendee-logo {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.attendee-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attendee-menu-item {
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.attendee-menu-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.attendee-menu-item.active {
+  background: #f97316;
+}
+
+.attendee-logout {
+  margin-top: auto;
+  background: #ef4444;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.attendee-main {
+  flex: 1;
+  padding: 32px;
+  overflow-x: hidden;
+}
+
+
+.attendee-main .org-filter-bar,
+.attendee-main .events-filters {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.attendee-main .org-events-grid,
+.attendee-main .events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+
+.attendee-main .event-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.attendee-main .event-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.attendee-main .event-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+.attendee-main .event-card-body button {
+  margin-top: auto;
+}
+
+
+.status-published {
+  color: green;
+  font-weight: 600;
+}
+
+.status-draft {
+  color: orange;
+  font-weight: 600;
+}
+
+.status-cancelled {
+  color: red;
+  font-weight: 600;
+}
+
+.status-completed {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.attendee-main .event-card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .attendee-main .event-card-body .event-actions,
+  .attendee-main .event-card-body > button,
+  .attendee-main .event-card-body > a {
+    margin-top: auto;
+  }
+  
+ 
+  .attendee-main .event-card-body .common-btn {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .attendee-main .event-card-body .common-btn:not(.secondary) {
+    background: #f97316;
+    color: white;
+  }
+  
+ 
+  .attendee-main .event-card-body .common-btn.secondary {
+    background: #f3f4f6;
+    color: #111827;
+  }
+  
+  
+  .attendee-main .event-card-body .common-btn + .common-btn {
+    margin-top: 8px;
+  }
+  
+
+
+.attendee-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  height: 80px;
+  padding: 10px 20px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+
+.attendee-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.attendee-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.attendee-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.attendee-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.attendee-role {
+  font-size: 15px;
+  color: white;
+}
+
+.attendee-logout-btn {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.attendee-logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}

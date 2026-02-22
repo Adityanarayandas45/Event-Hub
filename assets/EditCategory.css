@@ -1,0 +1,53 @@
+.edit-category-page {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 24px;
+  }
+  
+  .edit-category-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .edit-category-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .edit-category-input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.2);
+  }
+  
+  .edit-category-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .edit-category-btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .update-btn {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: #fff;
+  }
+  
+  .delete-btn {
+    background: #e53935;
+    color: #fff;
+  }
+  

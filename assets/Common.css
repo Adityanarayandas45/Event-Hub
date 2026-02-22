@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .common-wrapper {
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(135deg, #ff6a00, #ff9f1c);
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .common-right {
+    background: #fff;
+    width: 420px;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .common-right h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .common-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .common-form input,
+  .common-form select {
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    outline: none;
+  }
+  
+  .common-form input:focus,
+  .common-form select:focus {
+    border-color: #ff9f1c;
+  }
+
+  .common-btn {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #ff6a00, #ff9f1c);
+    border: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .common-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  .forgot-link {
+    display: block;
+   
+    text-align: right;
+    font-size: 16px;
+    color: #ff7a18;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-link:hover {
+    color: #ff9f1c;
+    text-decoration: underline;
+  }
+  .register-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #f97316, #fb923c);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 999px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 16px rgba(249, 115, 22, 0.3);
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-input {
+    width: 100%;
+    padding-right: 42px;
+  }
+  
+  .password-eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 20px;
+  }
+  
+  .password-eye:hover {
+    color: #111827;
+  }
+  .error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+    display: block;
+  }
+  

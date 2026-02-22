@@ -1,0 +1,46 @@
+.category-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .category-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  .category-item:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+  
+  .category-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .category-edit-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+  

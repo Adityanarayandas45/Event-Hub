@@ -1,0 +1,67 @@
+.attendees-wrapper {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .attendees-loading,
+  .attendees-empty {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #666;
+  }
+  
+  .attendees-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .attendees-table th,
+  .attendees-table td {
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .attendees-table th {
+    background: #f5f7fb;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .attendees-row:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  .attendees-row:hover {
+    background-color: #f0f4ff;
+  }
+  
+  .attendee-status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .status-registered {
+    background: #e3f2fd;
+    color: #1e88e5;
+  }
+  
+  .status-attended {
+    background: #e8f5e9;
+    color: #43a047;
+  }
+  
+  .status-cancelled {
+    background: #fdecea;
+    color: #e53935;
+  }
+  

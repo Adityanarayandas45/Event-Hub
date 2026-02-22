@@ -1,0 +1,137 @@
+.create-event-page {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+  }
+  
+  .create-event-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .create-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-select,
+  .form-file {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus,
+  .form-select:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.2);
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .form-file {
+    padding: 6px;
+  }
+  
+  .form-submit-btn {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .form-submit-btn:hover:not(:disabled) {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  .form-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  .location-wrapper {
+    position: relative;
+  }
+  
+  .location-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 100;
+    margin-top: 4px;
+  }
+  
+  .location-item {
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .location-item:hover {
+    background: #f0f4ff;
+  }
+  .form-error {
+    background: #ffe5e5;
+    color: #d8000c;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .form-success {
+    background: #e6ffed;
+    color: #2e7d32;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .map-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .selected-location {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2e7d32;
+    background: #e6ffed;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  .error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+  }
+  

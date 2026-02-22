@@ -1,0 +1,155 @@
+.org-table-wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+
+.org-table-loading,
+.org-table-empty {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+
+.org-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  min-width: 760px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.org-table th,
+.org-table td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.org-table th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.org-table-row {
+  transition: background 0.2s ease;
+}
+
+.org-table-row:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.org-table-row:hover {
+  background-color: #f1f5ff;
+}
+
+.org-table-event {
+  font-weight: 500;
+  color: #111827;
+}
+
+
+.org-status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+
+.status-registered {
+  background: #e0ecff;
+  color: #1d4ed8;
+}
+
+
+.status-attended {
+  background: #dcfce7;
+  color: #166534;
+}
+
+
+.status-cancelled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cancel-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #ffffff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancel-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+.datatable-search {
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 250px;
+}
+
+.rdt_Table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cancel-btn {
+  background: #ff4d4f;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  opacity: 0.9;
+}
+.datatable-search {
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.org-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-registered {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+
+.status-cancelled {
+  background: #fff1f0;
+  color: #ff4d4f;
+}
+
+.status-attended {
+  background: #f6ffed;
+  color: #52c41a;
+}

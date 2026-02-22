@@ -1,0 +1,163 @@
+{
+  "users": [
+    {
+      "id": "org-1",
+      "name": "Main Organizer",
+      "email": "dasadityanarayan24@gmail.com",
+      "password": "Adityadas@24",
+      "role": "organizer",
+      "isEmailVerified": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2026-02-04T07:34:01.363Z"
+    },
+    {
+      "id": "1770299475748",
+      "name": "Aditya",
+      "email": "adityanarayandas45@gmail.com",
+      "password": "Adityadas@24",
+      "role": "attendee",
+      "isEmailVerified": true,
+      "createdAt": "2026-02-05T13:51:15.748Z",
+      "updatedAt": "2026-02-05T13:51:33.523Z"
+    },
+    {
+      "id": "1770960877309",
+      "name": "Rohit",
+      "email": "adityanarayandas45@gmail.com",
+      "password": "Adityadas@24",
+      "role": "attendee",
+      "isEmailVerified": true,
+      "createdAt": "2026-02-13T05:34:37.309Z",
+      "updatedAt": "2026-02-13T05:35:01.646Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Technology"
+    },
+    {
+      "id": "2",
+      "name": "Music"
+    }
+  ],
+  "events": [
+    {
+      "id": "1770728837586",
+      "organizerId": "org-1",
+      "categoryId": "1",
+      "title": "sdasd",
+      "description": "sdadasdsdsdsdadsddda",
+      "location": "Kola, City of Banja Luka, Republika Srpska, Bosnia and Herzegovina",
+      "eventDate": "2026-02-13T00:00:00.000Z",
+      "capacity": 6,
+      "registeredCount": 0,
+      "status": "completed",
+      "imageUrl": "https://res.cloudinary.com/dgu5lar9v/image/upload/v1770728837/events/x0qudvjysp7wjnvflfpn.jpg",
+      "createdAt": "2026-02-10T13:07:17.586Z",
+      "updatedAt": "2026-02-13T06:55:48.472Z"
+    },
+    {
+      "id": "1770820340102",
+      "organizerId": "org-1",
+      "categoryId": "1",
+      "title": "addfsdf",
+      "description": "dfsdfsdfsfsdfsdfsdfsdfsdfsf",
+      "location": "Federal District, Central-West Region, Brazil",
+      "eventDate": "2026-02-12T00:00:00.000Z",
+      "capacity": 6,
+      "registeredCount": 0,
+      "status": "draft",
+      "imageUrl": "https://res.cloudinary.com/dgu5lar9v/image/upload/v1770820339/events/xyamdyn9yx0l18yutdvk.jpg",
+      "createdAt": "2026-02-11T14:32:20.102Z",
+      "updatedAt": "2026-02-12T09:07:45.907Z"
+    },
+    {
+      "id": "1770884521078",
+      "organizerId": "org-1",
+      "categoryId": "1",
+      "title": "sadasdd",
+      "description": "sdasdasdasdasdasdasd",
+      "location": "Bilgaon, Gughari Tahsil, Mandla, Madhya Pradesh, India",
+      "eventDate": "2026-02-13T00:00:00.000Z",
+      "capacity": 6,
+      "registeredCount": 0,
+      "status": "completed",
+      "imageUrl": "https://res.cloudinary.com/dgu5lar9v/image/upload/v1770900726/events/enblxyqmwfhwyzrfsjc1.jpg",
+      "createdAt": "2026-02-12T08:22:01.078Z",
+      "updatedAt": "2026-02-13T05:12:46.522Z"
+    },
+    {
+      "id": "1770961790029",
+      "organizerId": "org-1",
+      "categoryId": "1",
+      "title": "hjghjghjhjghjj",
+      "description": "hjghjghjghjghjjghjhjghj",
+      "location": "Ladpura Tehsil, Kota, Rajasthan, India",
+      "eventDate": "2026-02-21T00:00:00.000Z",
+      "capacity": 3,
+      "registeredCount": 0,
+      "status": "cancelled",
+      "imageUrl": "https://res.cloudinary.com/dgu5lar9v/image/upload/v1770961789/events/dgdedtkj7hy2ggpoxpqe.jpg",
+      "createdAt": "2026-02-13T05:49:50.029Z",
+      "updatedAt": "2026-02-20T05:57:28.559Z"
+    },
+    {
+      "id": "1771566607911",
+      "organizerId": "org-1",
+      "categoryId": "1",
+      "title": "dsffsfdfd",
+      "description": "dfsfdsfsdfdfdsfddfdsff",
+      "location": "Sapmara, Kulpi, South 24 Parganas, West Bengal, 743341, India",
+      "eventDate": "2026-02-21T00:00:00.000Z",
+      "capacity": 5,
+      "registeredCount": 0,
+      "status": "published",
+      "imageUrl": "https://res.cloudinary.com/dgu5lar9v/image/upload/v1771566607/events/kmjqclls6yesfhs6fo0b.png",
+      "createdAt": "2026-02-20T05:50:07.911Z",
+      "updatedAt": "2026-02-22T02:50:05.524Z"
+    }
+  ],
+  "registrations": [
+    {
+      "id": "1770900461369",
+      "eventId": "1770884521078",
+      "userId": "1770299475748",
+      "status": "cancelled",
+      "registeredAt": "2026-02-12T12:47:41.369Z",
+      "cancelledAt": "2026-02-12T12:47:49.300Z"
+    },
+    {
+      "id": "1770961866554",
+      "eventId": "1770961790029",
+      "userId": "1770299475748",
+      "status": "cancelled",
+      "registeredAt": "2026-02-13T05:51:06.554Z",
+      "cancelledAt": "2026-02-13T05:52:15.367Z"
+    },
+    {
+      "id": "1770961947275",
+      "eventId": "1770961790029",
+      "userId": "1770299475748",
+      "status": "cancelled",
+      "registeredAt": "2026-02-13T05:52:27.275Z",
+      "cancelledAt": "2026-02-20T05:57:28.559Z"
+    },
+    {
+      "id": "1771566650691",
+      "eventId": "1771566607911",
+      "userId": "1770299475748",
+      "status": "cancelled",
+      "registeredAt": "2026-02-20T05:50:50.691Z",
+      "cancelledAt": "2026-02-20T05:51:12.869Z"
+    },
+    {
+      "id": "1771567055487",
+      "eventId": "1771566607911",
+      "userId": "1770299475748",
+      "status": "cancelled",
+      "registeredAt": "2026-02-20T05:57:35.487Z",
+      "cancelledAt": "2026-02-22T02:50:05.524Z"
+    }
+  ]
+}

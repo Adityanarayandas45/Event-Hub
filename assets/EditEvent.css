@@ -1,0 +1,58 @@
+.edit-event-page {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+  }
+  
+  .edit-event-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .edit-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-select,
+  .form-file {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus,
+  .form-select:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.2);
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .form-file {
+    padding: 6px;
+  }
+  
+  .edit-event-btn {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
