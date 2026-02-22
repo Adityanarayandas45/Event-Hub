@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import "@/assets/CreateEvent.css";
-import { useMapEvents } from "react-leaflet";
+// import { useMapEvents } from "react-leaflet";
 import dynamic from "next/dynamic";
-import L from "leaflet";
+// import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const MapContainer = dynamic(
@@ -22,15 +22,7 @@ const Marker = dynamic(
   { ssr: false }
 );
 
-delete (L.Icon.Default.prototype as any)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl:
-    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  iconUrl:
-    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  shadowUrl:
-    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-});
+
 
 export default function CreateEventPage() {
   const router = useRouter();
@@ -47,7 +39,24 @@ export default function CreateEventPage() {
     categoryId: "",
     status: "draft",
   });
-
+  useEffect(() => {
+    async function loadLeaflet() {
+      const L = await import("leaflet");
+  
+      delete (L.Icon.Default.prototype as any)._getIconUrl;
+  
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl:
+          "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+        iconUrl:
+          "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+        shadowUrl:
+          "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+      });
+    }
+  
+    loadLeaflet();
+  }, []);
   const [errors, setErrors] = useState<any>({});
   const [image, setImage] = useState<File | null>(null);
 
@@ -160,30 +169,32 @@ export default function CreateEventPage() {
    
 
   function LocationMarker() {
+    const Leaflet = require("react-leaflet");
+    const { useMapEvents, Marker } = Leaflet;
+  
     useMapEvents({
-      async click(e) {
+      async click(e: any) {
         const { lat, lng } = e.latlng;
         setMarkerPosition([lat, lng]);
-
+  
         const res = await fetch(
           `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`
         );
         const data = await res.json();
-
-        const locationName =
-          data.display_name || "";
-
+  
+        const locationName = data.display_name || "";
+  
         setForm((prev) => ({
           ...prev,
           location: locationName,
         }));
-
+  
         validateField("location", locationName);
       },
     });
-
+  
     return markerPosition ? (
-      <Marker position={markerPosition}></Marker>
+      <Marker position={markerPosition} />
     ) : null;
   }
 
