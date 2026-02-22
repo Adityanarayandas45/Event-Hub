@@ -55,12 +55,12 @@ export async function GET(
 
 export async function PUT(
   request: Request,
-  context: { params: { id: string } }
+  context: {params: Promise<{ id: string }> }
 ) {
   try {
     const db = readDB();
     const formData = await request.formData();
-    const { id } = await Promise.resolve(context.params);
+    const { id } = await context.params;
 
     const event = db.events.find((e) => e.id === id);
 
